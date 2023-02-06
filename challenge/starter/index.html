@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Joanna Booth // Web Developer</title>
+  <title>Web Developer--Joanna Booth</title>
   <link rel="stylesheet" href="./css/style.css" />
 </head>
 
@@ -13,90 +13,60 @@
   <!-- main logo / nav -->
   <header>
     <h1>Joanna Booth's portfolio</h1>
-    <nav>
-      <div>
-                  
-                <a href="#about">About</a>
-                    
-            <a href="#work">Work</a>
-                  
-                <a href="#contact">Contact Me</a>
-            
-        
-    </div>
+    <nav class="menu">
+     <ul>
+
+      <li><a href="#about">About</a></li>
+      <li><a href="#work">Projects</a></li>
+      <li><a href="#contact">Contact Me</a></li>
+     </ul> 
     </nav>
   </header>
+<hr>
 
   <!-- hero banner -->
-  <section class="hero-banner">
+  <section class="hero-banner" id="hero">
     <div>
-      <h2>Designer extraordinaire!</h2>
+      <h2 class="wedDevText"><i>Web Developer-in-Training</i></h2>
     </div>
   </section>
-
+  <div class="container">
   <main class="page-wrapper">
-
-
     <!-- about me -->
-    <section class="page-section" id="about">
-
-      <h2>About Me</h2>
-      <img src="./images/girl_on_bench.jpg" class="float-left" alt="girl on bench in watercolours" />
-
-      <p>
-       I am a web developer learning on EdX. This is my portfolio. I will update it as I learn and develop. 
+    <section class="page-section">
+      <h2 id="about">About Me</h2>
+      <div class="aboutRight">
+      <img class="aboutRight" src="./images/profile pic_180911a.JPG" id="profile"></img>
+      <p class="aboutRight">Joanna Booth, Web Developer-in-Training. 
+        I'm a 45 year old, ex-senior analyst. 
+        I work as a book editor and freelance journalist. 
       </p>
+    </div>
     </section>
 
     <!-- portfolio container -->
-    <section class="page-section" >
-    
-      
-<div id="surf-report" class="categoryGridArea">
-  <div class="headingMain">
-  <div class="title">Surf Report</div>
-  <div class="subTitle">Project 1</div>
-  </div>
-  <div id="ledWall" class="categoryGridArea">
-  <div class="headingMain">
-  <div class="title">Led Wall</div>
-  <div class="subTitle">Project 2</div>
-  </div>
-  <div id="calculator" class="categoryGridArea">
-  <div class="headingMain">
-  <div class="title">Calculator</div>
-  <div class="subTitle">Project 3</div>
-  </div>
-  <div id="Puzzles" class="categoryGridArea">
-  <div class="headingMain">
-  <div class="title">Puzzles</div>
-  <div class="subTitle">Project 4</div>
-  </div>
-  <div id="Project5" class="categoryGridArea">
-    <div class="headingMain">
-    <div class="title">Project5</div>
-    <div class="subTitle">SubProject 5</div>
-    </div>
-      </section>
-     </div>
-      </div>
-    
-       
-    
-        
-          <img src="images/02-portfolio-3.jpg">
-        </div>
-      </section>
+    <!-- <section class="page-section work-section" id="work"> -->
+      <section  id="work">
+      <h2 class="work-title">Work</h2>
+      <div class="bigImg">
+      <a href="https://stillawake17.github.io/Console-Finances/" target="_new"><img src="./images/02-portfolio-1.jpg" class="project"></img><div class="project-text">Console Finances</div></div></a></div>
+      <div>
+      <a href="#"><img src="./images/02-portfolio-2.jpg" class="project"><div class="project-text">Project Two</div></div></a>
+      <div>
+        <a href="#"><img src="./images/02-portfolio-3.jpg" class="project"><div class="project-text">Project Three</div></div></a>
+      <div>
+        <a href="#"><img src="./images/02-portfolio-4.jpg" class="project"><div class="project-text">Project Four</div></div></a>
+  
     </section>
-
 
     <!-- contact -->
-    <section class="page-section contact" id="contact">
-      <h2>Contact Me</h2>
+    <section >
+    <!-- <section class="page-section" id="contact"> -->
+      <h2 class="contact-head">Contact Me</h2>
+      <p class="contact-text">You can find me at <a href="https://github.com/stillawake17">Github</a> as stillawake17. </p>
     </section>
   </main>
+</div>
 </body>
 
 </html>
-
-
