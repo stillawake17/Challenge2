@@ -15,3 +15,4 @@ The images are clickable and go to new pages.
 
 
 # link to deployed application.
+You can access the website at the following link (https://stillawake17.github.io/Challenge2/)
