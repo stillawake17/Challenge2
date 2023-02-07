@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+img {
+    width: 150px;
+  }
+
+  .bigImg { width: 300px; height: 250px;}
+
+
+  div {
+    display: inline;
+    min-height: 100px;
+  }
+
+
+
+ .container {
+    /* width: 800px; */
+    display: grid;
+    /* grid-template-columns: minmax(150px auto);
+    grid-template-rows: minmax(150px auto); */
+    grid-template-areas:
+    'header header header header header' 
+    'aboutMe picMe aboutText aboutText .'
+    'work-title bigImg bigImg bigImg .'
+    'work-title project2 project2 project3 project3'
+    'work-title project4 project4 project5 project5'
+    'contact-head contact-text contact-text contact-text .';
+  }
+
+  .header       {grid-area:1/1/2/5 header;}  
+    .aboutMe    { grid-area: 2/1/3/2 aboutMe; max-width: 50px;}
+     .picMe     {grid-area: 2/2/3/3 picMe; max-width: 50%; }
+     .aboutText { grid-area:  2/3/3/4 aboutText;}
+    .work-title { grid-area:  3/1/4/2 work-title; max-width:50px}
+    .bigImg     { grid-area:  3/2/4/5 bigImg; }
+    .project2   {grid-area: 4/2/5/3  project2; width: auto;}
+    .project3   {grid-area:  4/3/5/4 project3; width: auto;}
+    .project4   {grid-area: 5/2/6/4  project4; width: auto;}
+    .project5   {grid-area: 5/3/6/4  project5; width: auto;}
+    .contact-head { grid-area: contact-head; }
+    .contact-text { grid-area: 6/2/7/5 contact-text;}
+   
+   div {
+    background-color: lightblue;
+    border: 5px solid black;
+    display: grid;
+   }
+   </style>
+</head>
+<body>
+    <div class="container">
+    <div class="header">
+        
+    </div>
+    <div class="aboutMe"></div>
+    <div class="picMe"></div>
+    <div class="aboutText"></div>
+    <div class="work-title"></div>
+    <div class="bigImg"></div>
+    <div class="project2"></div>
+    <div class="project3"></div>
+    <div class="project4"></div>
+    <div class="project5"></div>
+    <div class="contact-head"></div>
+    <div class="contact-text"></div>
+    </div>
+</body>
+</html>

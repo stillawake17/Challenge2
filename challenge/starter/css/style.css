@@ -1,27 +1,58 @@
 img {
     width: 150px;
+    display: grid;
   }
 
-  .bigImg { width: 300px; height: 250px;}
-
+ 
 
   div {
-    display: inline;
-  }
-
-  body {
     display: grid;
-    grid-template-areas: 
-    'hero hero hero'
-    'about aboutRight aboutRight'
-    'work-title work-section work-section'
-    'contact-head contact-text .';
   }
-    .hero-banner { grid-area: hero; }
-    #about   { grid-area: about; }
-    .bio        { grid-area: bio; }
-    .work-title { grid-area: work-title; }
-    .project { grid-area: work-section; }
+/* 
+    header {grid-area: 1/1/2/6  header;}  
+    #aboutMe { grid-area: 2/1/3/2  aboutMe; }
+     #profile {grid-area: 2/2/3/3  picMe;}
+     .aboutText { grid-area: 2/3/3/4  aboutText; }
+    .work-title { grid-area: 3/1/4/2  work-title; }
+    .bigImg { grid-area: 4/2/5/3  bigImg; display: grid; width: 300px; height: 250px;}
+    .project2 {grid-area: 5/2/3/5  project2;}
+    .project3 {grid-area: 5/3/5/4 project3;}
+    .project4 {grid-area: 6/2/6/3 project4;}
+    .project5 {grid-area: 6/3/6/4 project5;}
+  
+    .contact-head { grid-area: 4/1/6/2 contact-head; }
+    .contact-text { grid-area: 6/2/7/4  contact-text;} */
+
+    header {grid-area: 1/1/2/6 header;}  
+    #aboutMe { grid-area: 2/1/3/2 aboutMe; }
+     .picMe {grid-area: 2/2/3/3  picMe; padding: 0 50px;}
+     .aboutText { grid-area: 2/3/3/4  aboutText; padding: 0 50px;}
+    .work-title { grid-area:   work-title; }
+    .bigImg { grid-area:   bigImg; display: grid; width: 300px; height: 250px;}
+    .project2 {grid-area:   project2;}
+    .project3 {grid-area:  project3;}
+    .project4 {grid-area:  project4;}
+    .project5 {grid-area:  project5;}
     .contact-head { grid-area: contact-head; }
     .contact-text { grid-area: contact-text;}
-    .aboutRight {grid-area: aboutRight;}
+
+
+  body {
+    /* width: 800px; */
+    display: grid;
+    grid-template-columns: minmax(150px auto);
+    grid-template-rows: minmax(150px auto);
+    grid-template-areas:
+    'header header header header ' 
+    'aboutMe picMe aboutText aboutText '
+    'work-title bigImg bigImg '
+    'work-title project2  project3'
+    'work-title project4  project5'
+    'contact-head contact-text contact-text . ';
+  }
+ 
+    h2, section, img, p {
+      display: grid;
+      justify-content: start;
+     
+    }
