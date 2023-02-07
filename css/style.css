@@ -1,0 +1,156 @@
+
+a, html, body {
+display: grid;
+
+}
+
+a {
+color: rgb(100, 43, 43);
+font-weight: 700;
+}
+img.project2,
+img.project3,
+img.project4,
+img.project5  {
+width: 250px;
+}
+
+.bigImg { 
+justify-items: stretch; 
+width: 600px;
+padding: 10px;
+height: 75%;
+margin-left: 30px;
+}
+
+.container {
+width: 800px;
+display: grid;
+grid-template-areas:
+'header header header header header' 
+'aboutMe picMe picMe aboutText aboutText'
+'work-title bigImg bigImg bigImg .'
+'work-title project2 project2 project3 project3'
+'work-title project4 project4 project5 project5'
+'contact-head contact-text contact-text contact-text .';
+}
+
+
+.header       {grid-area:  1/1/2/5 header;}  
+.aboutMe    { grid-area: 2/1/3/2 aboutMe; max-width: 90px; padding-right: 10px;}
+.picMe     {grid-area:  2/4/3/6 picMe;  max-width: 100px; margin-left: 58px; }
+.aboutText { grid-area: 2/6/3/8 aboutText; max-width: 250px; margin-left: 55px;}
+.work-title { grid-area: 3/1/6/2 work-title; max-width:90px; padding-right: 10px;}
+.bigImg     { grid-area: 3/4/4/6 bigImg; margin-left: 50px; }
+.project2   {grid-area:  4/3/5/4 project2;  }
+.project3   {grid-area:  4/7/5/9 project3; }
+.project4   {grid-area:  5/3/6/4 project4;  }
+.project5   {grid-area:  5/7/6/9  project5; }
+.contact-head {grid-area: 6/1/6/3 contact-head; max-width: 90px; padding-right: 10px; }
+.contact-text {grid-area: 6/5/7/6 contact-text;}
+
+body {
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+div {
+background-color: rgb(247, 248, 248);
+
+display: grid;
+min-height: 100px;
+}
+div.bigImg {
+margin-right: 35px;
+}
+li {
+display: inline;
+}
+
+
+.bigImg {
+position: relative;
+text-align: center;
+color: white;
+}
+
+/* Bottom left text */
+.project-text1 {
+position: absolute;
+bottom: 72px;
+left: 84px;
+font-size: 26px;
+font-weight: 500;
+border: 5px double white;
+background-color: rgba(255, 255, 255, 0.2);
+}
+
+.project-text2 {
+position: absolute;
+left: 150px;
+font-size: 26px;
+font-weight: 500;
+border: 5px double white;
+background-color: rgba(248, 244, 244, 0.5);
+}
+
+.project-text3 {
+position: absolute;
+left: 550px;
+font-size: 26px;
+font-weight: 500;
+border: 5px double white;
+background-color: rgba(36, 32, 32, 0.2);
+}
+img.project2, 
+img.project3,
+img.project4,
+img.project5 {
+position: relative;
+text-align: center;
+color: white;
+}
+
+.project-text4 {
+position: absolute;
+left: 150px;
+font-size: 26px;
+font-weight: 500;
+border: 5px double white;
+background-color: rgba(36, 32, 32, 0.2);
+}
+
+
+.project-text5 {
+position: absolute;
+left: 550px;
+font-size: 26px;
+font-weight: 500;
+border: 5px double white;
+background-color: rgba(36, 32, 32, 0.2);
+}
+/* using a mobile-first approach, `min-width` values are used going from narrow -> wide 
+for a responsive design */
+@media screen and (min-width: 768px) {
+/* on tablets, set columns to only be 50% of the width and not grow */
+.card-column {
+flex: 0 0 50%;
+max-width: 50%;
+}
+
+/* select the last child to grow to full width if it has space to grow */
+.card-column:last-child {
+flex-grow: 1;
+}
+}
+
+/* media query for larger screens */
+@media screen and (min-width: 992px) {
+header {
+width: 75%;
+}
+
+.card-column {
+flex: 0 0 33.333%;
+max-width: 33.333%;
+}
+}

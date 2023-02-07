@@ -1,0 +1,144 @@
+/* .project:hover {
+  width: 325px;
+  height: 300px;
+  transform: perspective(17px);
+  border: 5px double white;
+  border-radius: 9px;
+} */
+/* * {
+  box-sizing: border-box;
+} */
+
+img {
+  width: 150px;
+}
+
+div {
+  display: inline;
+}
+.hero-banner { grid-area: hero; }
+#about      { grid-area: about; }
+.bio        { grid-area: bio; }
+.work-title { grid-area: work-title; }
+.prject { grid-area: work-section; }
+.contact-head { grid-area: contact-head; }
+.contact-text { grid-area: contact-text;}
+.aboutRight {grid-area: aboutRight;}
+
+
+.container {
+  display: grid;
+  /* grid-template-columns: auto;
+  grid-template-rows: auto; */
+  grid-template-areas: 
+  'hero hero hero'
+  'about aboutRight aboutRight'
+  'work-title work-section work-section'
+  'contact-head contact-text .';
+
+}
+
+
+
+
+/* .bio {
+  margin-left: -5px;
+  margin-top: -5px;
+  display: flex; 
+  width: 49%;
+} */
+
+/* #about-me {
+  margin: auto;
+} */
+body {
+  display: grid;
+  margin: 0 auto;
+  padding: 10px ;
+  font-family:  'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  line-height: 1.5;
+  background: rgb(18, 232, 214);
+  background: linear-gradient(0deg, rgba(18, 232, 214,1)7%, rgba(255, 220, 145, 1) 88%);
+}
+
+/* #about {
+  justify-content: left;
+  border: 1px solid black;
+} */
+li {
+  margin-left: 100px;
+  display: inline;
+  text-align: center;
+}
+/* .project {
+  display: grid;
+ 
+  
+} */
+/* .project-text {
+  position: relative;
+  left: 350px;
+  bottom: 100px;
+  transform: translate(-50%, -50%);
+  background-color: rgba(255, 255, 255, 0.5);
+  display: inline;
+  font-weight: 600;
+  font-size: 26px;
+} */
+
+/* .page-section {
+   display: grid;
+  /* padding: 30px; */
+  /* width: 500px; */
+  /* grid-template-columns: auto; */
+}  */
+
+/* .page-wrapper, .hero {
+  max-width: 700px;
+  margin: auto;
+  border: 1px solid black;
+} */
+
+/* p, main, section {
+  display:grid;
+} */
+
+h1 {
+  font-weight: 900;
+  border: 1px solid rgb(42, 170, 170);
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: auto;
+  /* padding: 20px;
+  display: block; */
+  text-align: center;
+  color: rgb(255, 0, 127);
+}
+a {
+  color: rgb(255, 0, 127);
+}
+
+/* p.bio {
+  margin: 10px;
+  padding: 10px;
+  display: inline; */
+  /* position: absolute;
+  margin-left: 200px;
+  margin-top: 100px;
+  max-width: 300px; */
+  
+/* } */
+/* 
+#profile {
+  width: 150px;
+  margin: 0;
+}
+.contact {
+  border: 1px solid black;
+  
+} */
