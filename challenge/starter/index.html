@@ -1,57 +1,69 @@
 <!DOCTYPE html>
-<html lang="en-gb">
+<html lang="en">
+
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Web Developer--Joanna Booth</title>
-  <link rel="stylesheet" href="./css/style.css" />
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Web Developer--Joanna Booth</title>
+        <link rel="stylesheet" href="./css/style.css" />
+      
+
 </head>
-
 <body>
-  <!-- main logo / nav -->
-  <header>
-    <h1>Joanna Booth's portfolio</h1>
-    <nav class="menu">
-     <ul>
-
-      <li><a href="#about">About</a></li>
-      <li><a href="#work">Projects</a></li>
-      <li><a href="#contact">Contact Me</a></li>
-     </ul> 
-    </nav>
-    <h2 ><i>Web Developer-in-Training</i></h2>
-  </header>
- 
- 
-    <!-- about me -->
-    <!-- <section class="page-section"> -->
-      <h2 id="aboutMe">About Me</h2>
-      <div>
-      <img class="picMe" src="./images/profile pic_180911a.JPG"></img><p class="aboutText">Joanna Booth, Web Developer-in-Training. 
-        I'm a 45 year old, ex-senior analyst. I work as a book editor and freelance journalist.</p>
-    
-      </div>
-      <h2 class="work-title">Work</h2>
-      <div>
-        <br>
-      <a href="https://stillawake17.github.io/Console-Finances/" class="bigImg" target="_new"><img src="./images/02-portfolio-1.jpg" class="bigImg"></img><div class="project-text">Console Finances</div></a>      
-      <a href="#"><img src="./images/02-portfolio-2.jpg" class="project2"><div class="project-text">Project Two</div></a>
-      <a href="#"><img src="./images/02-portfolio-3.jpg" class="project3"><div class="project-text">Project Three</div></a>
-      <a href="#"><img src="./images/02-portfolio-4.jpg" class="project4"><div class="project-text">Project Four</div></a>
-      <a href="#"><img src="./images/02-portfolio-5.jpg" class="project5"><div class="project-text">Project Five</div></a>
+    <div class="container">
+    <div class="header" >
+        <header>
+            <h1>Joanna Booth's portfolio</h1>
+            <nav class="menu">
+             <ul>        
+              <li><a href="#about">About</a></li>
+              <li><a href="#work">Projects</a></li>
+              <li><a href="#contact">Contact Me</a></li>
+             </ul> 
+            </nav>
+            <h2 ><i>Web Developer-in-Training</i></h2>
+        </header>
     </div>
-    <!-- </section> -->
-
-    <!-- contact -->
-    <!-- <section > -->
-    <!-- <section class="page-section" id="contact"> -->
-      <h2 class="contact-head">Contact Me</h2>
-      <p class="contact-text">You can find me at <a href="https://github.com/stillawake17">Github</a> as stillawake17. </p>
-    <!-- </section> -->
-  </main>
+    <div class="aboutMe" id="about">
+        <h2>About Me</h2>
+    </div>
+    <div class="picMe">
+        <img class="picMe" src="./images/profile pic_180911a.JPG"></img>
+    </div>
+    <div class="aboutText">
+        <p class="aboutText">Joanna Booth, Web Developer-in-Training. 
+            I'm a 45 year old, ex-senior analyst. I work as a book editor and freelance journalist.</p>    
+    </div>
+    <div class="work-title" id="work">
+        <h2 class="work-title">Work</h2> 
+    </div>
+    <div class="bigImg">
+        <a href="https://stillawake17.github.io/Console-Finances/" target="_new">
+            <img src="./images/02-portfolio-1.jpg" class="bigImg">
+        </img></a><span class="project-text1">Console Finances</span>   
+    </div>
+    <div class="project2">
+        <a href="#"><img src="./images/02-portfolio-2.jpg" class="project2">
+            <span class="project-text2">Project Two</span></a>
+    </div>
+    <div class="project3">
+        <a href="#"><img src="./images/02-portfolio-3.jpg" class="project3"><span class="project-text3">Project Three</span></a>
+    </div>
+    <div class="project4">
+    <a href="#"><img src="./images/02-portfolio-4.jpg" class="project4"><span class="project-text4">Project Four</span></a>
 </div>
+    <div class="project5">
+    <a href="#"><img src="./images/02-run-buddy.jpg" class="project5"><span class="project-text5">Project Five</span></a>
+    </div>
+    <div class="contact-head" id="contact">
+        <h2>Contact Me</h2>
+    </div>
+    <div class="contact-text">
+        <p class="contact-text">You can find me at <a href="https://github.com/stillawake17">Github</a> as stillawake17. </p>
+   
+    </div>
+    </div>
 </body>
-
 </html>
